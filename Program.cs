@@ -97,46 +97,4 @@ namespace Conversione
     {
 
     }*/
-    /*static string IpBinario(int indirizzo)
-    {
-        int[] binario;
-        string IndirizzoConvertito = "";
-        binario = indirizzo.Split('.');
-        int risultato = 0, peso = 0, resto, aggiungiZeri;
-        string ottetoCorrente = "";
-        for (int i = 0; i < binario.Length; i++)
-        {
-            do
-            {
-                resto = Convert.ToInt32(binario[i]) % 2;
-                binario[i] = Convert.ToString(Convert.ToInt32(binario[i]) / 2);
-                risultato = (int)(risultato + resto * Math.Pow(10, peso));
-                peso++;
-            } while (Convert.ToInt32(binario[i]) > 0);
-
-            binario[i] = Convert.ToString(risultato);
-
-            if (binario[i].Length < 8)
-            {
-                aggiungiZeri = 8 - binario[i].Length;
-
-                for (int k = 0; k < aggiungiZeri; k++)
-                {
-                    ottetoCorrente += '0';
-                }
-
-                binario[i] = ottetoCorrente + binario[i];
-
-            }
-            risultato = 0;
-            ottetoCorrente = "";
-            peso = 0;
-        }
-        for (int i = 0; i < binario.Length; i++)
-        {
-            IndirizzoConvertito += binario[i] + '.';
-        }
-        IndirizzoConvertito = IndirizzoConvertito.TrimEnd('.');
-        return IndirizzoConvertito;
-    }*/
 }
