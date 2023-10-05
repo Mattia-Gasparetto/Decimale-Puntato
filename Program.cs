@@ -93,7 +93,7 @@ namespace Conversione
                 numeroBinario = dp[i];
                 for (int j = 0; j < bit; j++)
                 {
-                    bn[cont] = numeroBinario % 2 == 1;
+                    bn[cont] = numeroBinario % 2 == 1; //verifica se il bit è uguale 1 o 0 in base a questo assegnerà all'array di bool true o false
                     numeroBinario = numeroBinario / 2;
                     cont--;
                 }
